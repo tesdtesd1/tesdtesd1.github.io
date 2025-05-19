@@ -2,238 +2,143 @@ body {
        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
        margin: 0;
        padding: 0;
-       background: linear-gradient(135deg, #1a1a2e, #2e2e4b);
+       background: linear-gradient(135deg, #0d0d1a, #1a1a33);
        color: #e5e5e5;
        line-height: 1.6;
        overflow-x: hidden;
    }
 
    header {
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       padding: 1em 2em;
-       background: rgba(0, 0, 0, 0.3);
-       position: fixed;
-       width: 100%;
-       top: 0;
-       z-index: 1000;
-       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+       background: linear-gradient(90deg, #1a1a33, #333366);
+       color: white;
+       text-align: center;
+       padding: 2.5em 0;
+       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
    }
 
-   .logo {
-       font-size: 1.5em;
-       font-weight: bold;
-       color: #00d4ff;
-       text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff;
+   header h1 {
+       margin: 0;
+       font-size: 2.5em;
+       text-transform: uppercase;
+       color: #00ff00;
+       text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+   }
+
+   header p {
+       margin: 0.5em 0;
+       font-size: 1.1em;
+       color: #66ffcc;
+       text-shadow: 0 0 5px #66ffcc;
+   }
+
+   nav {
+       margin-top: 1em;
    }
 
    nav a {
        color: #e5e5e5;
-       margin-left: 1.5em;
+       margin: 0 1.5em;
        text-decoration: none;
        font-weight: 500;
        transition: color 0.3s ease, text-shadow 0.3s ease;
    }
 
    nav a:hover {
-       color: #00ffcc;
-       text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
-   }
-
-   .hero {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       padding: 6em 2em 2em;
-       min-height: 80vh;
-       text-align: center;
-       position: relative;
-       background: radial-gradient(circle, #2e2e4b 0%, #1a1a2e 100%);
-   }
-
-   .hero-content {
-       max-width: 600px;
-       z-index: 1;
-   }
-
-   .hero-content h1 {
-       font-size: 1.5em;
-       margin: 0;
-       color: #a9bcd0;
-       text-transform: uppercase;
-   }
-
-   .hero-content h2 {
-       font-size: 3.5em;
-       margin: 0.2em 0;
-       color: #fff;
-       text-shadow: 0 0 10px #00d4ff;
-   }
-
-   .hero-content h3 {
-       font-size: 1.5em;
-       margin: 0.5em 0;
-       color: #00ffcc;
-       text-shadow: 0 0 5px #00ffcc;
-   }
-
-   .hero-content p {
-       font-size: 1.1em;
-       max-width: 500px;
-       margin: 1em auto;
-       color: #a9bcd0;
-   }
-
-   .btn {
-       display: inline-block;
-       padding: 0.9em 1.8em;
-       margin: 1em 0.5em 0 0;
-       border-radius: 5px;
-       text-decoration: none;
-       font-weight: 600;
-       transition: all 0.3s ease;
-   }
-
-   .btn.primary {
-       background: linear-gradient(45deg, #00d4ff, #00ffcc);
-       color: #1a1a2e;
-       box-shadow: 0 0 10px #00d4ff;
-   }
-
-   .btn.secondary {
-       background: transparent;
-       border: 2px solid #00ffcc;
-       color: #00ffcc;
-       box-shadow: 0 0 5px #00ffcc;
-   }
-
-   .btn:hover {
-       transform: scale(1.05);
-       box-shadow: 0 0 15px #00d4ff;
-   }
-
-   .btn.secondary:hover {
-       background: rgba(0, 255, 204, 0.1);
-   }
-
-   .hero-image {
-       position: absolute;
-       right: 5%;
-       top: 50%;
-       transform: translateY(-50%);
-       max-width: 400px;
-   }
-
-   .hero-image img {
-       border-radius: 10px;
-       box-shadow: 0 4px 20px rgba(0, 212, 255, 0.5);
-       width: 100%;
+       color: #ff00ff;
+       text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
    }
 
    .content-section {
        max-width: 800px;
-       margin: 4em auto;
+       margin: 2em auto;
        padding: 2.5em;
-       background: rgba(22, 33, 62, 0.9);
-       border-radius: 15px;
-       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+       background: rgba(26, 26, 51, 0.9);
+       border-radius: 10px;
+       box-shadow: 0 4px 15px rgba(0, 255, 0, 0.2);
        text-align: center;
    }
 
    h2 {
-       color: #00ffcc;
-       font-size: 2.2em;
-       border-bottom: 3px solid #00d4ff;
+       color: #66ffcc;
+       font-size: 2em;
+       border-bottom: 2px solid #00ff00;
        padding-bottom: 0.5em;
-       margin-bottom: 1.5em;
-       text-shadow: 0 0 5px #00ffcc;
+       margin-bottom: 1em;
+       text-shadow: 0 0 5px #66ffcc;
+   }
+
+   p {
+       margin: 0 auto 1em;
+       max-width: 600px;
    }
 
    ul {
        list-style-type: none;
        padding: 0;
-       text-align: left;
-       margin: 0 auto;
        max-width: 600px;
+       margin: 0 auto;
+       text-align: left;
    }
 
    ul li {
-       margin: 1em 0;
+       margin: 0.8em 0;
        padding-left: 1.5em;
        position: relative;
-       color: #e5e5e5;
    }
 
    ul li:before {
-       content: "◆";
-       color: #00d4ff;
+       content: ">";
+       color: #ff00ff;
        position: absolute;
        left: 0;
-       font-size: 0.8em;
+       text-shadow: 0 0 5px #ff00ff;
    }
 
    ul li a {
-       color: #a9bcd0;
+       color: #66ffcc;
        text-decoration: none;
        transition: color 0.3s ease;
    }
 
    ul li a:hover {
-       color: #00ffcc;
+       color: #00ff00;
    }
 
    img {
        display: block;
        margin: 1.5em auto;
-       border: 2px solid #00d4ff;
+       border: 2px solid #00ff00;
        border-radius: 8px;
        max-width: 100%;
-       box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
-       transition: transform 0.3s ease;
+       height: auto;
+       box-shadow: 0 4px 10px rgba(0, 255, 0, 0.3);
+       transition: transform 0.3s ease, box-shadow 0.3s ease;
    }
 
    img:hover {
-       transform: scale(1.03);
+       transform: scale(1.02);
+       box-shadow: 0 4px 15px rgba(0, 255, 0, 0.5);
    }
 
    footer {
        text-align: center;
        padding: 1.5em;
-       background: #0f3460;
+       background: linear-gradient(90deg, #333366, #1a1a33);
        color: #e5e5e5;
-       margin-top: 2em;
        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
    }
 
-   @media (max-width: 800px) {
+   @media (max-width: 600px) {
        header {
-           flex-direction: column;
-           padding: 1em;
+           padding: 1.5em 0;
        }
        nav a {
-           margin: 0.5em 1em;
-           display: inline-block;
-       }
-       .hero {
-           flex-direction: column;
-           padding: 3em 1em;
-           min-height: 70vh;
-       }
-       .hero-content {
-           margin-bottom: 2em;
-       }
-       .hero-image {
-           position: static;
-           transform: none;
-           max-width: 300px;
-           margin: 0 auto;
+           margin: 0 1em;
+           display: block;
+           padding: 0.5em 0;
        }
        .content-section {
-           margin: 2em auto;
            padding: 1.5em;
-       }
-       h2 {
-           font-size: 1.8em;
+           margin: 1em;
        }
    }
