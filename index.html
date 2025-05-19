@@ -8,19 +8,45 @@
    </head>
    <body>
        <header>
-           <h1>Han Yeti</h1>
-           <p>CompTIA Security+ Certified Cybersecurity Enthusiast</p>
+           <div class="logo">HY</div>
            <nav>
                <a href="index.html">Home</a>
                <a href="projects.html">Projects</a>
                <a href="#skills">Skills</a>
+               <a href="#tools-tips">Tools & Tips</a>
                <a href="#contact">Contact</a>
            </nav>
        </header>
 
+       <section class="hero">
+           <div class="hero-text">
+               <h1>Hello I'm</h1>
+               <h2>Han Yeti</h2>
+               <h3>CompTIA Security+ Certified Cybersecurity Enthusiast</h3>
+               <p>I'm ready to protect your data from hackers. Protect your website, server, service, & application against the increasing sophistication of hacker threats. Start securing your data today!</p>
+               <a href="projects.html" class="btn">View Projects</a>
+               <a href="#about" class="btn secondary">Learn More</a>
+           </div>
+           <div class="hero-image">
+               <img src="assets/han-yeti-image.jpg" alt="Han Yeti" class="profile-img">
+           </div>
+       </section>
+
        <section id="about">
            <h2>About Me</h2>
            <p>I’m a dedicated Computer Engineering graduate from Kocaeli University with a CompTIA Security+ certification (2025). My goal is to excel as a SOC Analyst, leveraging hands-on projects and continuous learning to progress to senior security roles.</p>
+       </section>
+
+       <section id="tools-tips">
+           <h2>Tools & Tips</h2>
+           <p>Here are some insights and best practices for tools I use in my cybersecurity journey:</p>
+           <ul>
+               <li><strong>Splunk:</strong> Optimize log queries by using `index=* | stats count by host` to identify high-activity systems. Regularly update your dashboards for real-time threat visibility.</li>
+               <li><strong>Wazuh:</strong> Configure custom rules in `/var/ossec/rules/local_rules.xml` to detect specific threats like unauthorized access. Test rules in a lab environment first.</li>
+               <li><strong>Nmap:</strong> Use `-sV` for version detection and `-A` for OS and service info during reconnaissance. Combine with `-oN` to save scan results.</li>
+               <li><strong>Metasploit:</strong> Start with `msfconsole` and use `search [exploit]` to find relevant modules. Always test payloads in a controlled setting.</li>
+           </ul>
+           <p>These tips are based on my hands-on experience and can help streamline your security workflows!</p>
        </section>
 
        <section id="skills">
